@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #b8b0df, #80649d);
+      color: #2c2c54;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+    .hobbies-box {
+      background: #fff;
+      width: 80%;
+      max-width: 700px;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hobbies-box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 28px rgba(90, 24, 154, 0.3);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+      color: #5a189a;
+    }
+
+   
+    .hobby {
+      font-size: 22px;
+      margin: 15px 0;
+      padding: 12px;
+      border-radius: 12px;
+      background: #f3e8ff;
+      color: #3c096c;
+      font-weight: 500;
+      transition: background 0.3s, transform 0.3s;
+      cursor: default;
+    }
+
+    .hobby:hover {
+      background: #e0c3fc;
+      transform: scale(1.05);
+    }
+
+ 
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+      .hobby {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hobbies-box">
+    <h1>Hobbies 📈</h1>
+    <div class="hobby">Coding 👩‍💻</div>
+    <div class="hobby">Video Editing 📱</div>
+    <div class="hobby">Listening to Music 🎧</div>
+    <div class="hobby">Building Personal Projects 📊</div>
+  </div>
+
+</body>
+</html>
