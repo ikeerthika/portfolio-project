@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #dcd6f7, #f3e8ff); 
+      color: #2c2c54;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contact-box {
+      background: #fff;
+      max-width: 600px;
+      width: 90%;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-style: italic;
+    }
+
+    .contact-box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 28px rgba(90, 24, 154, 0.3);
+    }
+
+  
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #5a189a;
+    }
+
+    h2, h3, h4 {
+      margin: 10px 0;
+      color: #3c096c;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #6a4c93;
+    }
+
+    h3 {
+      font-size: 18px;
+      color: #4b5072;
+    }
+
+    h4 {
+      font-size: 18px;
+      color: #222;
+    }
+
+    
+    a {
+      color: #5a189a;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #9d4edd;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+      h2, h3, h4 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-box">
+    <h1>Contact</h1>
+    <h2>Email: <a href="mailto:ikeerthika25@gmail.com">ikeerthika25@gmail.com</a></h2>
+    <h3>Address: Ramnagar, New Jail Road, Madurai</h3>
+    <h4>Phone: <a href="tel:+919876766724">9876766724</a> | <a href="tel:+917658932105">7658932105</a></h4>
+  </div>
+
+</body>
+</html>
