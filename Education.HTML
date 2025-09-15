@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f6ff; /* light lavender */
+      color: #2c2c54;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      background: #5a189a; /* deep purple */
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    .navbar a:hover {
+      color: #ffb6f9; /* light pink highlight */
+      transform: scale(1.1);
+    }
+
+    /* Heading */
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin: 40px 0 20px;
+      color: #3c096c; /* darker purple */
+      letter-spacing: 1px;
+      font-style:
+        italic;
+
+    }
+  h2{
+     font-style:oblique;
+  }
+    /* Education Section */
+    .education {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .education:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 25px rgba(90, 24, 154, 0.3);
+    }
+
+    .education h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #5a189a;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    th {
+      background: #7b2cbf; /* purple header */
+      color: #fff;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background: #f3e8ff; /* light violet rows */
+    }
+
+    tr:hover {
+      background: #e0c3fc; /* soft gradient effect */
+      transition: 0.3s;
+    }
+
+    td {
+      color: #2c2c54;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+      .education {
+        padding: 20px;
+      }
+      table {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Page Title -->
+  <h1>Education</h1>
+
+  <!-- Education Section -->
+  <section class="education">
+    <h2>Academic Background</h2>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Institution</th>
+        <th>Year</th>
+      </tr>
+      <tr>
+        <td>Python Full-Stack Web Development</td>
+        <td>Innoval Institution</td>
+        <td>2025</td>
+      </tr>
+      <tr>
+        <td>B.Sc. Data Science & Analytics</td>
+        <td>N.M.S.S. Vellaichamy Nadar College, Madurai</td>
+        <td>2026</td>
+      </tr>
+      <tr>
+        <td>Higher Secondary (12th)</td>
+        <td>Government Girls Higher Secondary School, Mahaboobpalayam, Madurai</td>
+        <td>2023</td>
+      </tr>
+      <tr>
+        <td>Secondary (10th)</td>
+        <td>Government Girls Higher Secondary School, Mahaboobpalayam, Madurai</td>
+        <td>2021</td>
+      </tr>
+    </table>
+  </section>
+
+</body>
+</html>
