@@ -1,102 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <style>
-   
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+
+<title>Contact</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+    background:linear-gradient(135deg,#bda6d4,#7f9cce);
+
+}
+
+
+
+/* Navbar */
+
+.navbar{
+
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+    background:linear-gradient(90deg,#654ea3,#eaafc8);
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+
+.navbar a{
+
+    text-decoration:none;
+    color:#272139;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+
+}
+
+
+.navbar a:hover{
+
+    color:white;
+    transform:translateY(-3px);
+
+}
+
+
+
+
+/* Contact Box */
+
+.container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:80px;
+
+}
+
+
+
+.contact-box{
+
+    width:500px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition:0.3s;
+
+}
+
+
+
+.contact-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+h1{
+
+    font-size:45px;
+    color:#5a189a;
+    font-family:cursive;
+    margin-bottom:30px;
+
+}
+
+
+
+.info{
+
+    background:#f3e8ff;
+    padding:18px;
+    margin:15px 0;
+    border-radius:15px;
+    font-size:18px;
+    color:#3c096c;
+    transition:0.3s;
+
+}
+
+
+
+.info:hover{
+
+    background:#9c66b1;
+    color:white;
+
+}
+
+
+
+a{
+
+    color:#5a189a;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+
+.info:hover a{
+
+    color:white;
+
+}
+
+
+
+
+@media(max-width:768px){
+
+    .navbar{
+
+        gap:20px;
+        flex-wrap:wrap;
+
     }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #dcd6f7, #f3e8ff); 
-      color: #2c2c54;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+
+    .contact-box{
+
+        width:90%;
+
     }
 
-    .contact-box {
-      background: #fff;
-      max-width: 600px;
-      width: 90%;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      font-style: italic;
-    }
+}
 
-    .contact-box:hover {
-      transform: scale(1.02);
-      box-shadow: 0 12px 28px rgba(90, 24, 154, 0.3);
-    }
 
-  
-    h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-      color: #5a189a;
-    }
+</style>
 
-    h2, h3, h4 {
-      margin: 10px 0;
-      color: #3c096c;
-      font-weight: 500;
-    }
-
-    h2 {
-      font-size: 22px;
-      color: #6a4c93;
-    }
-
-    h3 {
-      font-size: 18px;
-      color: #4b5072;
-    }
-
-    h4 {
-      font-size: 18px;
-      color: #222;
-    }
-
-    
-    a {
-      color: #5a189a;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    a:hover {
-      color: #9d4edd;
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 32px;
-      }
-      h2, h3, h4 {
-        font-size: 16px;
-      }
-    }
-  </style>
 </head>
+
+
 <body>
 
-  <div class="contact-box">
-    <h1>Contact</h1>
-    <h2>Email: <a href="mailto:ikeerthika25@gmail.com">ikeerthika25@gmail.com</a></h2>
-    <h3>Address: Ramnagar, New Jail Road, Madurai</h3>
-    <h4>Phone: <a href="tel:+919876766724">9876766724</a> | <a href="tel:+917658932105">7658932105</a></h4>
-  </div>
+
+
+<div class="navbar">
+
+    <a href="Portfolio.html">HOME</a>
+    <a href="Aboutus.html">ABOUT</a>
+    <a href="skills.html">SKILLS</a>
+    <a href="Hobbies.html">HOBBIES</a>
+    <a href="Education.html">EDUCATION</a>
+    <a href="Contact.html">CONTACT</a>
+
+</div>
+
+
+
+
+<div class="container">
+
+
+<div class="contact-box">
+
+
+<h1>Contact 📞</h1>
+
+
+
+<div class="info">
+
+    Email :
+    <br>
+    <a href="mailto:ikeerthika25@gmail.com">
+    ikeerthika25@gmail.com
+    </a>
+
+</div>
+
+
+
+<div class="info">
+
+    Address :
+    <br>
+    Ramnagar, New Jail Road,
+    Madurai
+
+</div>
+
+
+
+<div class="info">
+
+    Phone :
+    <br>
+
+    <a href="tel:+919876766724">
+    9876766724
+    </a>
+
+    &nbsp; | &nbsp;
+
+    <a href="tel:+917658932105">
+    7658932105
+    </a>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
 
 </body>
+
 </html>
