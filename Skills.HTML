@@ -1,77 +1,141 @@
 <!DOCTYPE html>
-<html >
-<head>
-  
-    <title>Skills</title>
-    <style>
-        body{
-            margin: 0%;
-            padding: 0%;
-            background-color: rgb(170, 141, 187);
-        }
-        .con{
-            text-align: center;
-            color: black;
-            font-family:cursive;
-            font-size: 90px;
-            padding-top: 60px;
-        }
-        .box1{
-            display: grid;
-            background-color: lightgrey;
-            grid-template-columns: auto;
-            text-align: center;
-            margin-left: 800px;
-            margin-right: 800px;
-            border: 1px solid black;
-            border-radius: 50px;
-            padding-top: 2px;
-            padding-bottom: 2px;
-            font-size: 35px;
-            font-family: cursive;
-            margin-top: 10px;
-            }
-            box{
-                font-size: 70px;
-            }
-            .box1:hover{
-                background-color:rgb(156, 102, 177);
-                color:rgb(237, 227, 234);
-                transform: scale(1.1);
-                transition: 0.5s;
-            }
-             
-        .navbar{
-            display: flex;
-            justify-content: center;
-            background-color: rgb(0, 0, 0);
-            height: 30PX;
-            align-items: center;
-            gap: 200px;
-        }
-        .box2{
-           color: white;
-           text-decoration: none;
-              font-size: 10px;
-        }
-       
-    </style>
-</head>
-<body>
-    <h1 class="con">My Skills🧠</h1>
-    
-    <div class="box">
-        <div class="box1">
-            <h1>HTML
-            <img src="htmlimage.webp" height="110px" width="110px" alt="html">
-        </h1>
-        </div>
-        <div class="box1"><h1>CSS <img src="css.png" height="110px" width="110px" alt="html"></h1></div>  
+<html lang="en">
 
-        <div class="box1"><h1>JavaScript <img src="js.png" height="110px" width="110px" alt="html"></h1></div>
-        <div class="box1"><h1>Python <img src="python.jpeg" height="110px" width="110px" alt="html"></h1></div>
-        <div class="box1"><h1>SQL<img src="sql.png" height="120px" width="120px" alt="html"></h1></div>
-    </div>
-     
+<head>
+<title>My Skills</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#bda6d4,#7f9cce);
+}
+
+
+.title{
+    text-align:center;
+    margin-top:50px;
+    font-size:55px;
+    font-family:cursive;
+    color:#272139;
+}
+
+
+
+.skills{
+
+    display:grid;
+    grid-template-columns:repeat(3,250px);
+    justify-content:center;
+    gap:35px;
+    margin-top:50px;
+
+}
+
+
+
+.card{
+
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+    background:#9c66b1;
+    color:white;
+
+}
+
+
+
+.card h2{
+
+    font-size:28px;
+    margin-bottom:15px;
+
+}
+
+
+.card p{
+
+    font-size:16px;
+    line-height:1.5;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1 class="title">My Skills 🧠</h1>
+
+
+<div class="skills">
+
+
+<div class="card">
+<h2>HTML</h2>
+<p>HyperText Markup Language used to create the structure of web pages.</p>
+</div>
+
+
+<div class="card">
+<h2>CSS</h2>
+<p>Cascading Style Sheets used to design and style web pages.</p>
+</div>
+
+
+<div class="card">
+<h2>JavaScript</h2>
+<p>Programming language used to add interactivity and dynamic features to websites.</p>
+</div>
+
+
+<div class="card">
+<h2>Python</h2>
+<p>High-level programming language used for web development, automation and data applications.</p>
+</div>
+
+
+<div class="card">
+<h2>Django</h2>
+<p>Python-based web framework used to build secure and scalable web applications.</p>
+</div>
+
+
+<div class="card">
+<h2>MySQL</h2>
+<p>Database management system used to store and manage application data.</p>
+</div>
+
+
+<div class="card">
+<h2>UI/UX</h2>
+<p>User Interface and User Experience design used to create attractive and user-friendly designs.</p>
+</div>
+
+
+</div>
+
+
 </body>
 </html>
